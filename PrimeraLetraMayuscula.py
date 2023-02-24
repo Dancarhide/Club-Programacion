@@ -1,6 +1,6 @@
 print("Teclea un texto a convertir todas las letras de inicio de una palabra en mayusculas")
 texto = input("Texto: ")
+texto = texto.strip()
 texto= texto.title()
-print( texto)
-
-
+texto = ' '.join(texto.split())
+print(texto)
